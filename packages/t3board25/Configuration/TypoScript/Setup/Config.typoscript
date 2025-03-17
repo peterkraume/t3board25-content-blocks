@@ -1,0 +1,27 @@
+config {
+  cache_clearAtMidnight = 1
+
+  pageTitleFirst = 1
+  pageTitleProviders {
+    record {
+      provider = TYPO3\CMS\Core\PageTitle\RecordPageTitleProvider
+    }
+    seo {
+      provider = TYPO3\CMS\Seo\PageTitle\SeoTitlePageTitleProvider
+      before = record
+    }
+  }
+
+  contentObjectExceptionHandler = 0
+  absRefPrefix = /
+  admPanel = 1
+}
+
+[applicationContext == "Production"]
+  config {
+    compressCss = 1
+    compressJs = 1
+    concatenateCss = 1
+    concatenateJs = 1
+  }
+[global]

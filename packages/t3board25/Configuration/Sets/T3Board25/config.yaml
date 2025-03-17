@@ -1,0 +1,14 @@
+name: in2code/t3board25
+label: 'T3BOARD25 Site Package'
+dependencies:
+  - typo3/fluid-styled-content
+  - typo3/fluid-styled-content-css
+  - typo3/seo-sitemap
+settings:
+  t3board25:
+    language:
+      metaLanguage: de
+    page:
+      name: 'T3BOARD25'
+    navigation:
+      homeUid: 1

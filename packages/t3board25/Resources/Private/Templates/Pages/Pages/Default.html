@@ -1,0 +1,24 @@
+{namespace f=TYPO3\CMS\Fluid\ViewHelpers}
+<f:layout name="Default"/>
+<f:section name="Main">
+
+
+
+    <h1>{page.pageRecord.title}</h1>
+
+    <p>Main Navigation</p>
+    <f:if condition="{mainNavigation}">
+        <ul>
+            <f:for each="{mainNavigation}" as="level1">
+                <li>
+                    <f:link.typolink parameter="{level1.link}">{level1.title}</f:link.typolink>
+                </li>
+            </f:for>
+        </ul>
+    </f:if>
+
+    <hr>
+
+    <f:cObject typoscriptObjectPath="lib.content" data="0" />
+
+</f:section>

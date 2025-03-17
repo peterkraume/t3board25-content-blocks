@@ -1,0 +1,46 @@
+categories:
+  t3board25:
+    label: 't3board25 xmas'
+  t3board25.templates:
+    parent: t3board25
+    label: 'Templates'
+  t3board25.navigation:
+    parent: t3board25
+    label: 'Navigation'
+
+settings:
+  t3board25.language.metaLanguage:
+    label: 'Meta Language'
+    description: 'Language code for language meta tag, e.g. de'
+    category: t3board25.templates
+    type: string
+    default: 'de'
+
+  t3board25.page.name:
+    label: 'Page Name'
+    description: 'Name for page header'
+    category: t3board25.templates
+    type: string
+    default: ''
+
+  t3board25.navigation.homeUid:
+    label: 'Uid of home page'
+
+    description: 'Used as starting point for main navigation'
+    category: t3board25.navigation
+    type: int
+    default: 0
+
+  t3board25.navigation.privacyPageUid:
+    label: 'Uid of privacy page'
+    description: 'Used for Matomo opt-out'
+    category: t3board25.navigation
+    type: int
+    default: 0
+
+  t3board25.navigation.footerUidList:
+    label: 'List of uids for footer navigation'
+    description: 'Used to generate the footer navigation'
+    category: t3board25.navigation
+    type: string
+    default: ''

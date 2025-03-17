@@ -1,0 +1,33 @@
+name: in2code/demo-content-block
+typeName: in2code_democontentblock
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  -
+    identifier: categories
+    useExistingField: true
+  -
+    identifier: image
+    useExistingField: true
+  -
+    identifier: customtext
+    type: Text
+  -
+    identifier: buttons
+    label: Buttons
+    type: Collection
+    fields:
+      -
+        identifier: link
+        label: Link
+        type: Link
+        required: true
+      -
+        identifier: label
+        label: Button Text
+        type: Text
+        required: true

@@ -1,0 +1,11 @@
+lib {
+  content =< styles.content.get
+  content {
+    select {
+      where {
+        current = 1
+        wrap = colPos =
+      }
+    }
+  }
+}

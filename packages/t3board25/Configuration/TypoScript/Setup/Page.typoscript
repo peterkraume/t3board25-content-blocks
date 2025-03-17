@@ -1,0 +1,42 @@
+page = PAGE
+page {
+  meta {
+    viewport = width=device-width, initial-scale=1, shrink-to-fit=no
+
+    description.field = description
+    keywords.field = keywords
+
+    robots = all
+    revisit-after = 1 days
+    language = {$t3board25.language.metaLanguage}
+    siteinfo = robots.txt
+  }
+
+  10 = PAGEVIEW
+  10 {
+    paths {
+      100 = EXT:t3board25/Resources/Private/Templates/Pages/
+    }
+
+    dataProcessing {
+      10 = menu
+      10 {
+        levels = 1
+        includeSpacer = 1
+        expandAll = 1
+        as = mainNavigation
+        titleField = nav_title // title
+        special = directory
+        special.value = {$t3board25.navigation.homeUid}
+      }
+
+      20 < .10
+      20 {
+        includeNotInMenu = 1
+        special = list
+        special.value = {$t3board25.navigation.footerUidList}
+        as = footerNavigation
+      }
+    }
+  }
+}

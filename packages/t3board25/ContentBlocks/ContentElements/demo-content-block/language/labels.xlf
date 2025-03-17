@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2025-03-17T14:37:39+00:00" product-name="in2code/demo-content-block">
+		<header/>
+		<body>
+			<trans-unit id="title">
+				<source>Demo Content Block</source>
+			</trans-unit>
+			<trans-unit id="description">
+				<source>Description for Content Element in2code/demo-content-block</source>
+			</trans-unit>
+			<trans-unit id="customtext.label">
+				<source>customtext</source>
+			</trans-unit>
+			<trans-unit id="buttons.label">
+				<source>Buttons</source>
+			</trans-unit>
+			<trans-unit id="buttons.link.label">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="buttons.label.label">
+				<source>Button Text</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
